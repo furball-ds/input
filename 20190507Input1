@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class AssignmentCode {
+
+    public static void main(String[] args) {
+        Scanner UserInput = new Scanner(System.in);
+        System.out.println("Welcome to Sheldon's Amazing Human Brain Visualizer!");
+        System.out.print("How many neurons are in the network? : ");
+        int NumOfNeurons = UserInput.nextInt();
+        //array to store Neuron Information
+        int NeuronInfo[][] = new int[NumOfNeurons][2];
+
+        for (int count1 = 0; count1 < NumOfNeurons; count1++) {
+            System.out.print("Please insert the neuron ID, and its number of edges : ");
+            int neuronID = UserInput.nextInt();
+            int NumOfEdge = UserInput.nextInt();
+            NeuronInfo[count1][0] = neuronID; //neuronID
+            NeuronInfo[count1][1] = NumOfEdge; 
+            for (int count2 = 0; count2 < NumOfEdge; count2++) {
+                System.out.print("Please insert the ID of connected neuron, distance of edge & time to pass through : ");
+                int connectedID = UserInput.nextInt();
+                int edgeDist = UserInput.nextInt();
+                int time = UserInput.nextInt();
+                
+            }
+        }
+    }
+
+}
